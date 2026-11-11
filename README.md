@@ -1,17 +1,23 @@
-# 译学
-
 ![译学 Windows 桌面翻译与语言学习横幅（宣传概念图）](docs/screenshots/yixue-github-banner.png)
 
-**把翻译、查词和语言学习放进一个桌面工作流。**
+<h1 align="center">译学</h1>
 
-译学是一款面向 Windows 的桌面翻译与语言学习软件。你可以翻译文字、框选屏幕内容、查词收藏，再把词汇和句子带入学习练习；观看视频或参加线上会议时，也可以尝试用 AI 同传识别桌面声音并查看双语字幕。
+<p align="center"><strong>Yixue Desktop</strong></p>
+<p align="center">译懂世界，学会表达。</p>
+<p align="center">英汉本机翻译 · 截图对照查词 · 词汇与句子练习 · AI 实时同传</p>
 
 <p align="center">
-  <a href="https://github.com/sun2006-xin/yixue-desktop/releases/tag/v0.1.0-preview.8"><img src="https://img.shields.io/badge/Windows-Preview%208-1677d2" alt="Windows Preview 8"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/Source%20License-Apache--2.0-4c8f72" alt="Apache 2.0 source license"></a>
+  <a href="https://github.com/sun2006-xin/yixue-desktop/releases/tag/v0.1.0-preview.8"><img src="https://img.shields.io/badge/Platform-Windows-1677d2" alt="Platform: Windows"></a>
+  <a href="https://github.com/sun2006-xin/yixue-desktop/releases/tag/v0.1.0-preview.8"><img src="https://img.shields.io/badge/Release-Preview%208-536df5" alt="Release: Preview 8"></a>
+  <img src="https://img.shields.io/badge/Local%20translation-EN--ZH-4c8f72" alt="Local English Chinese translation">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/Source%20license-Apache--2.0-596579" alt="Source license: Apache 2.0"></a>
 </p>
 
-> **当前版本：Windows Preview 8。** 横幅是生成式宣传概念图；下方产品图是译学应用界面截图。音频采集、屏幕录制和媒体回放会受 Windows 设备、驱动与素材影响，仍需要在不同电脑上持续验收。
+> 横幅是生成式宣传概念图；下方展示译学应用界面。当前为 Preview，音频采集、屏幕录制和媒体回放会受 Windows 设备、驱动与素材影响，仍需在不同环境中验收。
+
+## 项目简介
+
+译学是一款面向 Windows 的桌面翻译与语言学习软件。它把读懂文字和屏幕内容、查询并收藏词汇、安排复习练习、查看实时双语字幕串在一套本机优先的工作流里。英汉翻译可使用随包模型；其他语言和云端能力按需配置。
 
 ## 译学可以帮你完成什么
 
