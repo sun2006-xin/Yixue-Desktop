@@ -1,0 +1,30 @@
+include: package:flutter_lints/flutter.yaml
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
+
+linter:
+  rules:
+    # Strict typing
+    - always_declare_return_types
+    - always_specify_types
+    - avoid_dynamic_calls
+    - prefer_typing_uninitialized_variables
+    
+    # Immutability
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_final_fields
+    - prefer_final_locals
+    
+    # Code quality
+    - avoid_print
+    - use_key_in_widget_constructors
+    - require_trailing_commas
+    
+analyzer:
+  errors:
+    # Treat these as errors
+    missing_required_param: error
+    missing_return: error
+    invalid_annotation_target: ignore

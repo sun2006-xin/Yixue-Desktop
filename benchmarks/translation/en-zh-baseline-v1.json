@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "yixue-en-zh-baseline-v1",
+  "cases": [
+    {
+      "id": "en-zh-daily-01",
+      "category": "daily",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "Could you open the window? It is getting warm in here.",
+      "references": ["你能把窗户打开吗？这里开始变热了。"]
+    },
+    {
+      "id": "en-zh-spoken-01",
+      "category": "spoken",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "Give me a minute. I am almost done.",
+      "references": ["稍等我一下，我马上就好。", "给我一分钟，我快做完了。"]
+    },
+    {
+      "id": "en-zh-ambiguity-01",
+      "category": "ambiguity",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "The bank is closed.",
+      "references": ["银行关门了。", "河岸被封闭了。"]
+    },
+    {
+      "id": "en-zh-technical-01",
+      "category": "technical",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "The cache is invalidated whenever the model configuration changes.",
+      "references": ["每当模型配置发生变化时，缓存都会失效。"]
+    },
+    {
+      "id": "en-zh-academic-01",
+      "category": "academic",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "The results suggest that context improves terminology consistency without increasing factual errors.",
+      "references": ["结果表明，上下文可以提高术语一致性，而不会增加事实性错误。"]
+    },
+    {
+      "id": "en-zh-terminology-01",
+      "category": "terminology",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "The local inference engine verifies the model package before loading it.",
+      "references": ["本地推理引擎会在加载模型包之前对其进行校验。"]
+    },
+    {
+      "id": "en-zh-formatting-01",
+      "category": "formatting",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "Version 2.1 costs $0 and uses 512 MB of memory.",
+      "references": ["2.1 版本费用为 $0，占用 512 MB 内存。"],
+      "preserve": ["2.1", "$0", "512 MB"]
+    },
+    {
+      "id": "en-zh-long-01",
+      "category": "long_sentence",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "Although the meeting ended earlier than expected, the team stayed online to compare the translated transcript with the original recording and correct several names that the speech recognizer had misunderstood.",
+      "references": ["虽然会议比预期更早结束，但团队仍然在线核对翻译稿与原始录音，并纠正了几个被语音识别器误解的人名。"]
+    },
+    {
+      "id": "zh-en-daily-01",
+      "category": "daily",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "我把钥匙放在桌上了，出门时别忘了带。",
+      "references": ["I left the keys on the table. Do not forget to take them when you leave."]
+    },
+    {
+      "id": "zh-en-spoken-01",
+      "category": "spoken",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "没关系，我们下次再试。",
+      "references": ["It is okay. We can try again next time.", "No worries. We will try again next time."]
+    },
+    {
+      "id": "zh-en-ambiguity-01",
+      "category": "ambiguity",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "他没有同意这个建议。",
+      "references": ["He did not agree to the proposal.", "He did not approve the suggestion."]
+    },
+    {
+      "id": "zh-en-technical-01",
+      "category": "technical",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "应用会在本地计算文件的 SHA-256，然后再允许加载模型。",
+      "references": ["The application computes the file's SHA-256 locally before allowing the model to load."],
+      "preserve": ["SHA-256"]
+    },
+    {
+      "id": "zh-en-academic-01",
+      "category": "academic",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "本研究评估了不同分段策略对长文翻译准确性和连贯性的影响。",
+      "references": ["This study evaluated the effects of different segmentation strategies on the accuracy and coherence of long-document translation."]
+    },
+    {
+      "id": "zh-en-terminology-01",
+      "category": "terminology",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "术语表应当覆盖产品名称、缩写和用户指定的固定译法。",
+      "references": ["The glossary should cover product names, abbreviations, and user-specified fixed translations."]
+    },
+    {
+      "id": "zh-en-formatting-01",
+      "category": "formatting",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "API 请求在 45 秒后超时，错误码为 E-104。",
+      "references": ["The API request times out after 45 seconds with error code E-104."],
+      "preserve": ["API", "45", "E-104"]
+    },
+    {
+      "id": "zh-en-long-01",
+      "category": "long_sentence",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "为了让读者在不打断阅读节奏的情况下理解论文，软件需要保留原始版式，同时把译文、批注和术语解释放在容易查看但不会遮挡正文的位置。",
+      "references": ["To help readers understand a paper without interrupting their reading flow, the software needs to preserve the original layout while placing translations, annotations, and terminology explanations where they are easy to view without covering the text."]
+    }
+  ]
+}

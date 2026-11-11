@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="译学单色标志">
+  <g fill="#111820" stroke="#111820" stroke-linejoin="round">
+    <path d="M46 51C37 33 24 18 11 16C7 32 13 47 28 56C34 59 41 55 46 51Z" stroke="none"/>
+    <path d="M28 60C47 64 60 49 72 38C81 29 89 22 96 21C97 29 95 36 92 42C82 41 74 46 65 54C51 67 39 69 28 60Z" stroke="none"/>
+    <path d="M64 57C74 48 84 44 93 45C91 58 83 68 72 75C65 79 61 85 59 91C54 79 56 66 64 57Z" stroke="none"/>
+    <path d="M55 53C54 61 47 70 41 77L55 97L69 77C63 68 57 61 57 53Z" fill="none" stroke-width="4"/>
+    <circle cx="55" cy="75" r="3.2"/>
+    <path d="M55 78V96" fill="none" stroke-width="2"/>
+  </g>
+</svg>

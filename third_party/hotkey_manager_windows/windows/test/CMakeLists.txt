@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.14)
+project(hotkey_key_mapping_test LANGUAGES CXX)
+
+if(NOT WIN32)
+  message(FATAL_ERROR "The native hotkey mapping test requires Windows.")
+endif()
+
+enable_testing()
+add_executable(hotkey_key_mapping_test hotkey_key_mapping_test.cpp)
+target_compile_features(hotkey_key_mapping_test PRIVATE cxx_std_17)
+target_include_directories(hotkey_key_mapping_test PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/..")
+target_link_libraries(hotkey_key_mapping_test PRIVATE user32)
+if(MSVC)
+  target_compile_options(hotkey_key_mapping_test PRIVATE /W4 /WX /EHsc)
+endif()
+add_test(NAME hotkey_key_mapping_test COMMAND hotkey_key_mapping_test)

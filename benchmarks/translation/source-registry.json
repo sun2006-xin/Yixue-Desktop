@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "yixue-authored-eval-20260911",
+      "title": "译学英汉 v2 项目原创评测句",
+      "origin": "project_authored",
+      "redistribution": "allowed",
+      "release_scope": "private_repository",
+      "public_release_requires_owner_approval": true,
+      "owner": "花鱼鱼",
+      "notes": "为测试翻译完整性、术语、论文表达和格式保留而原创；未复制词典、论文、字幕或用户内容。"
+    }
+  ]
+}

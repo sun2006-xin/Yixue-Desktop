@@ -1,0 +1,17 @@
+OPUS-MT model notices for Yixue
+
+1. Helsinki-NLP/opus-mt-en-zh
+   Source: https://huggingface.co/Helsinki-NLP/opus-mt-en-zh
+   Revision: 408d9bc410a388e1d9aef112a2daba955b945255
+   License: Apache License 2.0
+   Changes: Converted to CTranslate2 format and quantized to INT8 for local inference.
+
+2. Helsinki-NLP/opus-mt-zh-en
+   Source: https://huggingface.co/Helsinki-NLP/opus-mt-zh-en
+   Revision: cf109095479db38d6df799875e34039d4938aaa6
+   Creator/maintainer attribution: Helsinki-NLP / OPUS-MT
+   License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+   License URL: https://creativecommons.org/licenses/by/4.0/
+   Changes: Converted to CTranslate2 format and quantized to INT8 for local inference.
+
+Yixue and its designer do not claim ownership of the original model weights.

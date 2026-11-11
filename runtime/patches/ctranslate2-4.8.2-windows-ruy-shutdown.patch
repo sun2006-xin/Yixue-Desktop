@@ -1,0 +1,71 @@
+diff --git a/src/cpu/backend.cc b/src/cpu/backend.cc
+index c54e957..096461a 100644
+--- a/src/cpu/backend.cc
++++ b/src/cpu/backend.cc
+@@ -105,10 +105,25 @@ namespace ctranslate2 {
+     }
+ 
+ #ifdef CT2_WITH_RUY
++# ifdef _WIN32
++    static thread_local ruy::Context* ruy_context = nullptr;
++
+     ruy::Context *get_ruy_context() {
++      if (!ruy_context)
++        ruy_context = new ruy::Context();
++      return ruy_context;
++    }
++
++    void clear_ruy_context() {
++      delete ruy_context;
++      ruy_context = nullptr;
++    }
++# else
++    ruy::Context *get_ruy_context() {
+       static thread_local ruy::Context context;
+       return &context;
+     }
++# endif
+ #endif
+   }
+ }
+diff --git a/src/cpu/backend.h b/src/cpu/backend.h
+index 60aa2c2..9b6c16f 100644
+--- a/src/cpu/backend.h
++++ b/src/cpu/backend.h
+@@ -29,6 +29,9 @@ namespace ctranslate2 {
+     bool pack_gemm_weights(ComputeType compute_type);
+ #ifdef CT2_WITH_RUY
+     ruy::Context *get_ruy_context();
++# ifdef _WIN32
++    void clear_ruy_context();
++# endif
+ #endif
+ 
+   }
+diff --git a/src/devices.cc b/src/devices.cc
+index 68c8dca..8f88fe4 100644
+--- a/src/devices.cc
++++ b/src/devices.cc
+@@ -4,6 +4,9 @@
+ #  include "cuda/utils.h"
+ #  include "cuda/random.h"
+ #endif
++#ifdef CT2_WITH_RUY
++#  include "cpu/backend.h"
++#endif
+ #ifdef CT2_WITH_TENSOR_PARALLEL
+ #  include <unistd.h>
+ #endif
+@@ -128,6 +131,12 @@ namespace ctranslate2 {
+ #else
+       (void)device;
+ #endif
++#if defined(CT2_WITH_RUY) && defined(_WIN32)
++    if (device == Device::CPU) {
++      cpu::clear_ruy_context();
++    }
++#endif
++    (void)device;
+   }
+ 
+   // Initialize the static member variable

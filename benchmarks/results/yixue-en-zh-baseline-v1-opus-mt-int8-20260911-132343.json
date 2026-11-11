@@ -1,0 +1,371 @@
+{
+  "schema_version": 1,
+  "suite_id": "yixue-en-zh-baseline-v1",
+  "generated_at": "2026-09-11T13:23:47.2997565+08:00",
+  "engine": "CTranslate2 4.8.2 / INT8",
+  "models": {
+    "english_to_chinese": {
+      "package": "yixue.opus-en-zh.int8",
+      "size_mib": 78.72,
+      "load_ms": 208,
+      "load_peak_working_set_mib": 104.25
+    },
+    "chinese_to_english": {
+      "package": "yixue.opus-zh-en.int8",
+      "size_mib": 78.72,
+      "load_ms": 188,
+      "load_peak_working_set_mib": 100.61
+    }
+  },
+  "summary": {
+    "cases": 16,
+    "average_ms": 177.06,
+    "p50_ms": 157,
+    "p95_ms": 490,
+    "max_ms": 490.0,
+    "peak_working_set_mib": 138.27,
+    "preserve_passed": 2,
+    "preserve_total": 3
+  },
+  "cases": [
+    {
+      "id": "en-zh-daily-01",
+      "category": "daily",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "Could you open the window? It is getting warm in here.",
+      "references": [
+        "你能把窗户打开吗？这里开始变热了。"
+      ],
+      "translation": "你能打开窗户吗?",
+      "elapsed_ms": 87,
+      "peak_working_set_mib": 134.89,
+      "preserve": [],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "en-zh-spoken-01",
+      "category": "spoken",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "Give me a minute. I am almost done.",
+      "references": [
+        "稍等我一下，我马上就好。",
+        "给我一分钟，我快做完了。"
+      ],
+      "translation": "给我一分钟,我快好了",
+      "elapsed_ms": 64,
+      "peak_working_set_mib": 135.04,
+      "preserve": [],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "en-zh-ambiguity-01",
+      "category": "ambiguity",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "The bank is closed.",
+      "references": [
+        "银行关门了。",
+        "河岸被封闭了。"
+      ],
+      "translation": "银行关门了",
+      "elapsed_ms": 45,
+      "peak_working_set_mib": 135.04,
+      "preserve": [],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "en-zh-technical-01",
+      "category": "technical",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "The cache is invalidated whenever the model configuration changes.",
+      "references": [
+        "每当模型配置发生变化时，缓存都会失效。"
+      ],
+      "translation": "当模型配置改变时,缓存将无效 。",
+      "elapsed_ms": 124,
+      "peak_working_set_mib": 135.38,
+      "preserve": [],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "en-zh-academic-01",
+      "category": "academic",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "The results suggest that context improves terminology consistency without increasing factual errors.",
+      "references": [
+        "结果表明，上下文可以提高术语一致性，而不会增加事实性错误。"
+      ],
+      "translation": "结果显示,背景情况提高了术语的一致性,而没有增加事实错误。",
+      "elapsed_ms": 157,
+      "peak_working_set_mib": 135.89,
+      "preserve": [],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "en-zh-terminology-01",
+      "category": "terminology",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "The local inference engine verifies the model package before loading it.",
+      "references": [
+        "本地推理引擎会在加载模型包之前对其进行校验。"
+      ],
+      "translation": "本地推论引擎在装货前验证模型包。",
+      "elapsed_ms": 139,
+      "peak_working_set_mib": 135.54,
+      "preserve": [],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "en-zh-formatting-01",
+      "category": "formatting",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "Version 2.1 costs $0 and uses 512 MB of memory.",
+      "references": [
+        "2.1 版本费用为 $0，占用 512 MB 内存。"
+      ],
+      "translation": "第2.1版费用为0美元,使用512MB内存。",
+      "elapsed_ms": 175,
+      "peak_working_set_mib": 135.82,
+      "preserve": [
+        {
+          "token": "2.1",
+          "present": true
+        },
+        {
+          "token": "$0",
+          "present": false
+        },
+        {
+          "token": "512 MB",
+          "present": false
+        }
+      ],
+      "preserve_pass": false,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "en-zh-long-01",
+      "category": "long_sentence",
+      "source_language": "english",
+      "target_language": "chinese",
+      "source": "Although the meeting ended earlier than expected, the team stayed online to compare the translated transcript with the original recording and correct several names that the speech recognizer had misunderstood.",
+      "references": [
+        "虽然会议比预期更早结束，但团队仍然在线核对翻译稿与原始录音，并纠正了几个被语音识别器误解的人名。"
+      ],
+      "translation": "虽然会议比预期提前结束,但小组仍然在网上将翻译稿与原录作作比较,并更正了语音识别器误解的若干名字。",
+      "elapsed_ms": 316,
+      "peak_working_set_mib": 137.85,
+      "preserve": [],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "zh-en-daily-01",
+      "category": "daily",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "我把钥匙放在桌上了，出门时别忘了带。",
+      "references": [
+        "I left the keys on the table. Do not forget to take them when you leave."
+      ],
+      "translation": "I left the keys on the table, so don't forget to take them when you're out.",
+      "elapsed_ms": 237,
+      "peak_working_set_mib": 135.81,
+      "preserve": [],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "zh-en-spoken-01",
+      "category": "spoken",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "没关系，我们下次再试。",
+      "references": [
+        "It is okay. We can try again next time.",
+        "No worries. We will try again next time."
+      ],
+      "translation": "It's okay. We'll try again.",
+      "elapsed_ms": 121,
+      "peak_working_set_mib": 134.98,
+      "preserve": [],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "zh-en-ambiguity-01",
+      "category": "ambiguity",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "他没有同意这个建议。",
+      "references": [
+        "He did not agree to the proposal.",
+        "He did not approve the suggestion."
+      ],
+      "translation": "He did not agree with that suggestion.",
+      "elapsed_ms": 83,
+      "peak_working_set_mib": 135.0,
+      "preserve": [],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "zh-en-technical-01",
+      "category": "technical",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "应用会在本地计算文件的 SHA-256，然后再允许加载模型。",
+      "references": [
+        "The application computes the file's SHA-256 locally before allowing the model to load."
+      ],
+      "translation": "The application will be used to calculate the file locally in SHA-256 and then allow the model to be loaded.",
+      "elapsed_ms": 227,
+      "peak_working_set_mib": 136.88,
+      "preserve": [
+        {
+          "token": "SHA-256",
+          "present": true
+        }
+      ],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "zh-en-academic-01",
+      "category": "academic",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "本研究评估了不同分段策略对长文翻译准确性和连贯性的影响。",
+      "references": [
+        "This study evaluated the effects of different segmentation strategies on the accuracy and coherence of long-document translation."
+      ],
+      "translation": "This study assesses the impact of the different sub-strategies on the accuracy and consistency of long-language translations.",
+      "elapsed_ms": 222,
+      "peak_working_set_mib": 136.16,
+      "preserve": [],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "zh-en-terminology-01",
+      "category": "terminology",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "术语表应当覆盖产品名称、缩写和用户指定的固定译法。",
+      "references": [
+        "The glossary should cover product names, abbreviations, and user-specified fixed translations."
+      ],
+      "translation": "The glossary should cover product names, abbreviations and fixed translations specified by the user.",
+      "elapsed_ms": 168,
+      "peak_working_set_mib": 136.16,
+      "preserve": [],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "zh-en-formatting-01",
+      "category": "formatting",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "API 请求在 45 秒后超时，错误码为 E-104。",
+      "references": [
+        "The API request times out after 45 seconds with error code E-104."
+      ],
+      "translation": "API requests timeout after 45 seconds with the error code E-104.",
+      "elapsed_ms": 178,
+      "peak_working_set_mib": 136.16,
+      "preserve": [
+        {
+          "token": "API",
+          "present": true
+        },
+        {
+          "token": "45",
+          "present": true
+        },
+        {
+          "token": "E-104",
+          "present": true
+        }
+      ],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    },
+    {
+      "id": "zh-en-long-01",
+      "category": "long_sentence",
+      "source_language": "chinese",
+      "target_language": "english",
+      "source": "为了让读者在不打断阅读节奏的情况下理解论文，软件需要保留原始版式，同时把译文、批注和术语解释放在容易查看但不会遮挡正文的位置。",
+      "references": [
+        "To help readers understand a paper without interrupting their reading flow, the software needs to preserve the original layout while placing translations, annotations, and terminology explanations where they are easy to view without covering the text."
+      ],
+      "translation": "In order for the reader to understand the paper without disrupting the reading rhythm, the software needs to retain the original layout, while placing translations, comments and terminology interpretation in an easily viewed position that does not obscure the text.",
+      "elapsed_ms": 490,
+      "peak_working_set_mib": 138.27,
+      "preserve": [],
+      "preserve_pass": true,
+      "manual_accuracy_1_to_5": null,
+      "manual_naturalness_1_to_5": null,
+      "manual_terminology_1_to_5": null,
+      "manual_notes": ""
+    }
+  ]
+}

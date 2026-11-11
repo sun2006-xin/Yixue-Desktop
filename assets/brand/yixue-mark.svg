@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title desc">
+  <title id="title">译学标志</title>
+  <desc id="desc">天空蓝与新生绿构成流动的 Y，底部为亮银钢笔尖。</desc>
+  <defs>
+    <linearGradient id="blue" x1="8" y1="14" x2="48" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#63CFFF"/><stop offset=".56" stop-color="#1597FF"/><stop offset="1" stop-color="#0876E8"/>
+    </linearGradient>
+    <linearGradient id="trail" x1="18" y1="25" x2="79" y2="59" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24C3E8"/><stop offset="1" stop-color="#34D887"/>
+    </linearGradient>
+    <linearGradient id="green" x1="92" y1="16" x2="52" y2="55" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#78EEA7"/><stop offset=".55" stop-color="#34D887"/><stop offset="1" stop-color="#0EAD72"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="37" y1="57" x2="63" y2="82" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9FCFF"/><stop offset=".52" stop-color="#9AA7B5"/><stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+  <path d="M46 51C37 33 24 18 11 16C7 32 13 47 28 56C34 59 41 55 46 51Z" fill="url(#blue)" stroke="#fff" stroke-opacity=".48" stroke-width="1.1"/>
+  <path d="M28 60C47 64 60 49 72 38C81 29 89 22 96 21C97 29 95 36 92 42C82 41 74 46 65 54C51 67 39 69 28 60Z" fill="url(#trail)" stroke="#fff" stroke-opacity=".52" stroke-width="1.1"/>
+  <path d="M64 57C74 48 84 44 93 45C91 58 83 68 72 75C65 79 61 85 59 91C54 79 56 66 64 57Z" fill="url(#green)" stroke="#fff" stroke-opacity=".42" stroke-width="1.1"/>
+  <path d="M55 53C54 61 47 70 41 77L55 97L69 77C63 68 57 61 57 53Z" fill="url(#silver)" stroke="#27313D" stroke-width="1.3" stroke-linejoin="round"/>
+  <circle cx="55" cy="75" r="3.2" fill="#17202B"/>
+  <path d="M55 78V96" stroke="#17202B" stroke-width="1.8"/>
+</svg>

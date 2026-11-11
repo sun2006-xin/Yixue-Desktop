@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "catalog_id": "yixue-translation-errors-v1",
+  "purpose": "记录已观察到的模型错误类型，供后续设计独立授权训练样本；不直接作为训练集使用。",
+  "source_policy": {
+    "origin": "project_authored",
+    "source_id": "yixue-authored-eval-20260911",
+    "contains_personal_data": false,
+    "training_eligible": false,
+    "note": "这些记录来自固定评测集，必须与训练数据隔离。"
+  },
+  "cases": [
+    {
+      "id": "error-en-zh-academic-001",
+      "direction": "en-zh",
+      "category": "terminology",
+      "severity": "major",
+      "source": "The local inference engine verifies the model package before loading it.",
+      "observed_output": "本地推论引擎在装货前验证模型包。",
+      "reference": "本地推理引擎会在加载模型包之前对其进行校验。",
+      "tags": ["inference_engine", "loading", "technical_term", "literal_translation"],
+      "review_status": "observed_pending_blind_review"
+    },
+    {
+      "id": "error-en-zh-academic-002",
+      "direction": "en-zh",
+      "category": "academic",
+      "severity": "major",
+      "source": "The results suggest that context improves terminology consistency without increasing factual errors.",
+      "observed_output": "结果显示,背景情况提高了术语的一致性,而没有增加事实错误。",
+      "reference": "结果表明，上下文可以提高术语一致性，而不会增加事实性错误。",
+      "tags": ["academic_register", "hedging", "naturalness", "punctuation"],
+      "review_status": "observed_pending_blind_review"
+    },
+    {
+      "id": "error-zh-en-technical-001",
+      "direction": "zh-en",
+      "category": "terminology",
+      "severity": "major",
+      "source": "应用会在本地计算文件的 SHA-256，然后再允许加载模型。",
+      "observed_output": "The application will be used to calculate the file locally in SHA-256 and then allow the model to be loaded.",
+      "reference": "The application computes the file's SHA-256 locally before allowing the model to load.",
+      "tags": ["sentence_structure", "technical_term", "voice", "awkward_english"],
+      "review_status": "observed_pending_blind_review"
+    },
+    {
+      "id": "error-zh-en-academic-001",
+      "direction": "zh-en",
+      "category": "academic",
+      "severity": "major",
+      "source": "本研究评估了不同分段策略对长文翻译准确性和连贯性的影响。",
+      "observed_output": "This study assesses the impact of the different sub-strategies on the accuracy and consistency of long-language translations.",
+      "reference": "This study evaluated the effects of different segmentation strategies on the accuracy and coherence of long-document translation.",
+      "tags": ["segmentation_strategy", "long_document_translation", "academic_register", "terminology"],
+      "review_status": "observed_pending_blind_review"
+    },
+    {
+      "id": "error-en-zh-completeness-001",
+      "direction": "en-zh",
+      "category": "completeness",
+      "severity": "major",
+      "source": "Although the meeting ended earlier than expected, the team stayed online to compare the translated transcript with the original recording and correct several names that the speech recognizer had misunderstood.",
+      "observed_output": "虽然会议比预期提前结束,但小组仍然在网上将翻译稿与原录作作比较,并更正了语音识别器误解的若干名字。",
+      "reference": "虽然会议比预期更早结束，但团队仍然在线核对翻译稿与原始录音，并纠正了几个被语音识别器误解的人名。",
+      "tags": ["long_sentence", "named_entity", "completeness", "garbled_phrase"],
+      "review_status": "observed_pending_blind_review"
+    },
+    {
+      "id": "error-en-zh-formatting-001",
+      "direction": "en-zh",
+      "category": "formatting",
+      "severity": "major",
+      "source": "Version 2.1 costs $0 and uses 512 MB of memory.",
+      "observed_output": "第2.1版费用为0美元,使用512MB内存。",
+      "reference": "2.1 版本费用为 $0，占用 512 MB 内存。",
+      "tags": ["currency", "version", "measurement_unit", "spacing"],
+      "review_status": "protected_by_runtime_after_fix"
+    }
+  ]
+}

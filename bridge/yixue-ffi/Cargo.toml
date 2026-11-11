@@ -1,0 +1,20 @@
+[package]
+name = "yixue-ffi"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+yixue-core = { path = "../../core/yixue-core" }
+
+[dev-dependencies]
+sha2.workspace = true
+
+[lints.clippy]
+all = "deny"
+pedantic = "warn"
